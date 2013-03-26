@@ -18,7 +18,7 @@
 * Grid, responsive + other goodies
 * Nice jQuery plugins
 
-<a href="" ><img src="images/bootstrap_logo.jpg" alt="Twitter Bootstrap" />
+<img src="images/bootstrap_logo.jpg" alt="Twitter Bootstrap" />
 
 ---
 
