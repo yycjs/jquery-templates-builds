@@ -196,21 +196,52 @@
       </div>
     </footer>
 
-    <div id="dialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	    <div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-		    <h3 id="myModalLabel">Modal header</h3>
-	    </div>
-	    <div class="modal-body"></div>
-	    <div class="modal-footer">
-		    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		    <button class="btn btn-primary">Save changes</button>
-	    </div>
-    </div>
+    <div id="dialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+
+    <script type="application/x-mustache" id="login">
+	    <form class="form-horizontal login">
+		    <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    <h3 id="myModalLabel">Login or signup</h3>
+		    </div>
+		    <div class="modal-body">
+			    <div class="control-group">
+				    <label class="control-label" for="inputEmail">Email</label>
+				    <div class="controls">
+					    <input type="text" id="inputEmail" name="email" placeholder="Email">
+					    <span class="help-inline" style="dislpay: none;"></span>
+				    </div>
+			    </div>
+			    <div class="control-group">
+				    <label class="control-label" for="inputPassword">Password</label>
+				    <div class="controls">
+					    <input type="password" id="inputPassword" name="password" placeholder="Password">
+				    </div>
+			    </div>
+			    <div class="control-group">
+				    <label class="control-label">
+					    <a href="#" class="toggleSignup"><i class="toggleChevron icon-right-open"></i> Signup</a>
+				    </label>
+			    </div>
+			    <div class="control-group signup" style="display: none;">
+				    <label class="control-label" for="inputPasswordRepeat">Repeat</label>
+				    <div class="controls">
+					    <input type="password" id="inputPasswordRepeat" name="passwordRepeat" placeholder="Repeat password">
+				    </div>
+			    </div>
+		    </div>
+		    <div class="modal-footer">
+			    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			    <button class="btn btn-primary submit">Login</button>
+		    </div>
+	    </form>
+    </script>
 
     <script src="components/jquery/jquery.js"></script>
     <script src="components/bootstrap/js/bootstrap-modal.js"></script>
-    <script src="js/login/login.js"></script>
+    <script src="components/mustache/mustache.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

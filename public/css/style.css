@@ -321,6 +321,14 @@ footer {
   font-size: 40px;
 }
 
+form.login {
+	margin-bottom: 0;
+}
+
+form.login a.toggleSignup:hover {
+	text-decoration: none;
+}
+
 /* Responsive Overrides
 =====================================*/
 @media (max-width: 979px) {
