@@ -1,6 +1,6 @@
 (function($, undefined) {
 	$.fn.mustache = function(src, data) {
-		var scriptTag = $(src),
+		var scriptTag = $('#' + src),
 			template = scriptTag.length ? scriptTag.text() : src,
 			content = Mustache.render(template, data || {});
 

@@ -9,7 +9,7 @@
 
 	$.fn.login = function() {
 		this.click(function(event) {
-			$('#dialog').mustache('#login').modal('show');
+			$('#dialog').mustache('login').modal('show');
 
 			var form = $('#dialog').find('form');
 
