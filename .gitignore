@@ -3,3 +3,4 @@ tmp/
 deploy/
 .DS_Store
 npm-debug.log
+public/components
