@@ -2,7 +2,20 @@
 
 ---
 
-## Twitter Bower
+## Today we are covering...
+
+* [Bower](http://twitter.github.com/bower/)
+* [Bootstrap](http://twitter.github.com/bootstrap/)
+* [jQuery](http://jquery.com/)
+* [Grunt](http://gruntjs.com/)
+
+---
+
+## Get your JavaScript
+
+### Direct Downloads?
+### CDNs ([Google](https://developers.google.com/speed/libraries/devguide), [Microsoft](http://www.asp.net/ajaxlibrary/cdn.ashx))?
+### [Twitter Bower](http://twitter.github.com/bower/)
 
 * Client side dependency management
 * No more manual downloading
@@ -38,7 +51,21 @@
 
 ## jQuery plugin
 
-- Login
+It's as simple as:
+
+    (function($, undefined) {
+       $.fn.myButton = function() {
+        var text = this.text();
+        this.click(function() {
+          alert(text);
+        });
+       }
+
+    })(jQuery);
+
+And can be used like this:
+
+    $('button').myButton();
 
 ---
 

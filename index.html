@@ -72,7 +72,7 @@
             </aside>
             
             <aside class="page_number">
-              1/6
+              1/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -84,10 +84,49 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h2>Twitter Bower</h2></header>
+            <header><h2>Today we are covering...</h2></header>
             
             
             <section><ul>
+<li><a href="http://twitter.github.com/bower/">Bower</a></li>
+<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="http://gruntjs.com/">Grunt</a></li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="slides.md">slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/7
+            </aside>
+            <img class="logo" src="theme/img/yycjs-logo.png">
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h2>Get your JavaScript</h2></header>
+            
+            
+            <section><h3>Direct Downloads?</h3>
+<h3>CDNs (<a href="https://developers.google.com/speed/libraries/devguide">Google</a>, <a href="http://www.asp.net/ajaxlibrary/cdn.ashx">Microsoft</a>)?</h3>
+<h3><a href="http://twitter.github.com/bower/">Twitter Bower</a></h3>
+<ul>
 <li>Client side dependency management</li>
 <li>No more manual downloading</li>
 <li>Versioning and manifest support</li>
@@ -108,7 +147,7 @@
             </aside>
             
             <aside class="page_number">
-              2/6
+              3/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -144,7 +183,7 @@
             </aside>
             
             <aside class="page_number">
-              3/6
+              4/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -187,7 +226,7 @@
             </aside>
             
             <aside class="page_number">
-              4/6
+              5/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -202,9 +241,20 @@
             <header><h2>jQuery plugin</h2></header>
             
             
-            <section><ul>
-<li>Login</li>
-</ul></section>
+            <section><p>It's as simple as:</p>
+<pre><code>(function($, undefined) {
+   $.fn.myButton = function() {
+    var text = this.text();
+    this.click(function() {
+      alert(text);
+    });
+   }
+
+})(jQuery);
+</code></pre>
+<p>And can be used like this:</p>
+<pre><code>$('button').myButton();
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -220,7 +270,7 @@
             </aside>
             
             <aside class="page_number">
-              5/6
+              6/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -256,7 +306,7 @@
             </aside>
             
             <aside class="page_number">
-              6/6
+              7/7
             </aside>
             <img class="logo" src="theme/img/yycjs-logo.png">
           </footer>
@@ -278,28 +328,33 @@
       
         
         <tr id="toc-row-2" class="sub">
-          <th><a href="#slide2">Twitter Bower</a></th>
+          <th><a href="#slide2">Today we are covering...</a></th>
           <td><a href="#slide2">2</a></td>
         </tr>
         
         <tr id="toc-row-3" class="sub">
-          <th><a href="#slide3">Twitter Bootstrap</a></th>
+          <th><a href="#slide3">Get your JavaScript</a></th>
           <td><a href="#slide3">3</a></td>
         </tr>
         
         <tr id="toc-row-4" class="sub">
-          <th><a href="#slide4">Templating</a></th>
+          <th><a href="#slide4">Twitter Bootstrap</a></th>
           <td><a href="#slide4">4</a></td>
         </tr>
         
         <tr id="toc-row-5" class="sub">
-          <th><a href="#slide5">jQuery plugin</a></th>
+          <th><a href="#slide5">Templating</a></th>
           <td><a href="#slide5">5</a></td>
         </tr>
         
         <tr id="toc-row-6" class="sub">
-          <th><a href="#slide6">Grunt</a></th>
+          <th><a href="#slide6">jQuery plugin</a></th>
           <td><a href="#slide6">6</a></td>
+        </tr>
+        
+        <tr id="toc-row-7" class="sub">
+          <th><a href="#slide7">Grunt</a></th>
+          <td><a href="#slide7">7</a></td>
         </tr>
         
       
