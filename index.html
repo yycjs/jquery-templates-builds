@@ -92,6 +92,15 @@
 <li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
 <li><a href="http://jquery.com/">jQuery</a></li>
 <li><a href="http://gruntjs.com/">Grunt</a></li>
+</ul>
+<h3>Brought to you by</h3>
+<p><strong>Eric Kryski</strong></p>
+<ul>
+<li>GitHub: <a href="http://ekryski.github.com">ekryski.github.com</a>, Twitter: <a href="http://twitter.com/ekryski">@ekryski</a></li>
+</ul>
+<p><strong>David Luecke</strong></p>
+<ul>
+<li>GitHub: <a href="http://daffl.github.com">daffl.github.com</a>, Twitter: <a href="http://twitter.com/daffl">@daffl</a></li>
 </ul></section>
             
           </div>
@@ -244,12 +253,15 @@
             <section><p>It's as simple as:</p>
 <pre><code>(function($, undefined) {
    $.fn.myButton = function() {
-    var text = this.text();
-    this.click(function() {
-      alert(text);
+    this.each(function(button) {
+      var text = button.text();
+      button.click(function() {
+        alert(text);
+      });
     });
-   }
 
+    return this;
+   }
 })(jQuery);
 </code></pre>
 <p>And can be used like this:</p>
