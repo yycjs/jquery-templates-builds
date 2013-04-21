@@ -9,6 +9,16 @@
 * [jQuery](http://jquery.com/)
 * [Grunt](http://gruntjs.com/)
 
+### Brought to you by
+
+__Eric Kryski__
+
+* GitHub: [ekryski.github.com](http://ekryski.github.com), Twitter: [@ekryski](http://twitter.com/ekryski)
+
+__David Luecke__
+
+* GitHub: [daffl.github.com](http://daffl.github.com), Twitter: [@daffl](http://twitter.com/daffl)
+
 ---
 
 ## Get your JavaScript
@@ -55,12 +65,15 @@ It's as simple as:
 
     (function($, undefined) {
        $.fn.myButton = function() {
-        var text = this.text();
-        this.click(function() {
-          alert(text);
+        this.each(function(button) {
+          var text = button.text();
+          button.click(function() {
+            alert(text);
+          });
         });
-       }
 
+        return this;
+       }
     })(jQuery);
 
 And can be used like this:
